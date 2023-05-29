@@ -7,7 +7,7 @@ from proxpy import request, dlprox
 ```
 
 ## Setting Up ProxPy
-To use ProxPy, You would have to download a proxy list and setup a ProxPy Session. You can do those two important things using the following code.
+To use ProxPy, You would have to download a proxy list. You can do  this using the following code.
 ```python
 dlprox("http://example.com/proxy-list.txt").get
 ```
@@ -17,6 +17,8 @@ proxy0 = dlprox("http://example.com/proxy-list.txt")
 proxy0.get()
 ```
 ## Setup ProxPy Session
+Most important part to do, use this line of code below.
+```python
 r = request()
 ```
 After doing this, You can load proxies from the txt file created by ProxPy.
