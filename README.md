@@ -1,5 +1,6 @@
 # ProxPy - HTTP Requests with Proxies made simple.
 
+# Start
 ## Get ProxPy
 Download proxpy.py from this repo and put it in your project. You can import using the following code below.
 ```python
@@ -60,5 +61,19 @@ headers = {
 }
 r.post("http://x.com", headers=headers)
 ```
+
+# Functions
+## class: dlprox
+get() - downloads given proxy list from dlprox(URL)  
+## class: request
+load() - load proxpy proxy file  
+request_proxy() - returns random proxy  
+get(url, headers=headers, proxyInfo=boolean) - do a http get request to given url, headers and proxyInfo is optional  
+post(url, data=data, headers=headers, proxyInfo=boolean) - do a http post request to given url with given data, headers and proxyInfo is optional
+# Common Fields
+url - url to server you want to do a request to  
+data - http post data to submit to url  
+headers - http headers to send to url  
+proxyInfo - if true, print the proxy thats about to be used. if false/ignored, does not print the proxy thats about to be used
 # Important of all
 Please use this responsibly and make sure to read the Terms of Service of any website before using ProxPy on their service. <3
